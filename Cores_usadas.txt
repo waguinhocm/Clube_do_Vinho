@@ -1,0 +1,3 @@
+#7454d9 - cor de fundo das telas
+#f1d958 - cor botão amarelo
+#94d1e4 - cor botão azul
