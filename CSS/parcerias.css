@@ -16,7 +16,7 @@ body{
     font-weight:200;
     font-style: normal;
 }
-h1, h2, h4{
+h1, h2, h3, h4{
     text-align: center;
     color: white;;
 }
@@ -84,4 +84,11 @@ footer{
     border-radius: 2px;
     cursor: pointer;
     color: white;
+}
+.parceiros{
+    display: block;
+    margin: 5rem;
+}
+.parceiro{
+    margin: 3rem;
 }
