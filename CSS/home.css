@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    
+    color: white;
+    background-color: #7454d9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;}
+
+#top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+#nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+#navegacao, #nav_vinhos {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav_vinhos {
+    margin-top: 15px;
+}
+
+#navegacao li, #nav_vinhos li {
+    text-align: center; 
+    flex: 1;
+    white-space: nowrap; 
+
+}
+
+#nav li a, #nav_vinhos li a {
+    display: block; 
+    padding: 5px 35px;
+    background-color: #f1d958;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    box-sizing: border-box; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: #d60c0c;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+#search-user {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px; 
+    margin-bottom: 80px;
+    margin-right: 40px;
+}
+
+#search-user img {
+    height: 40px; 
+}
+.interagir {
+    cursor: pointer;
+}
+.star {
+    margin-right: 12px;
+}
+
+#pesquisar {
+    padding: 8px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 8px;
+    background-color: transparent;
+    margin-bottom: 6px;
+    color: white;
+    text-align: center;
+    
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font: 13px verdana, arial, sans-serif;
+ }
+
+ #more-posts {
+    margin-top: 60px;
+    font-size: 20px;
+    letter-spacing: 1px;
+ }
+ #more-posts strong {
+    margin-right: 450px;
+    margin-left: 150px;
+ }
+ #more-posts img {
+    height: 40px; 
+    margin-left: 100px;
+    position: absolute;
+ }
+
+ #more-posts button {
+    padding: 8px 20px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+ }
+ #more-posts button, 
+#nav li a, 
+#nav_vinhos li a {
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#nav a:hover, 
+#nav_vinhos a:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+#wines {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 90px;
+}
+
+
+.wineContour {
+    background-color: #f1d958; 
+    border-radius: 15px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    color: black;
+    
+}
+
+.wineContour img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+
+.rating {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: rgb(172, 6, 6);
+    color: white;
+    border-radius: 100%;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.wineButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.wineButtons button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
