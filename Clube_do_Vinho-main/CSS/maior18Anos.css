@@ -54,12 +54,29 @@ h1{
     color: white
 }
 
+section{
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 35px;
+}
+#sobreNos{
+    display: block;
+    text-align: center;
+}
+#contatos{
+    display: block;
+    text-align: center;
+}
 .rodape{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #7454d9;
     color: white;
-    height: 100px;
-    padding: 200px 15px;
+    height: 30px;
+    padding: 0 15px;
 }
