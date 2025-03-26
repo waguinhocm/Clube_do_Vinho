@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
+    color: white;
+    height: 10rem;
+    padding: 0 1.5rem;
+}
+
+body{
+    background-color: #7454d9;
+}
+
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+div{
+    color: white;
+    width: 500px;
+    margin: 20px;
+    font-family: monospace;
+
+}
+h1{
+    color: white;
+    font-size: 25px;
+}
+h2{
+   color: white;
+
+}
+
+section{
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+h1{
+    font-family: "Montserrat", serif;
+    text-align: center;
+    font-size: 35px;
+    color: white
+}
+
+section{
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 35px;
+}
+#sobreNos{
+    display: block;
+    text-align: center;
+}
+#contatos{
+    display: block;
+    text-align: center;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
+    color: white;
+    height: 30px;
+    padding: 0 15px;
+}
