@@ -1,0 +1,90 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
+    color: white;
+    height: 10rem;
+    padding: 0 1.5rem;
+}
+body{
+    
+    color: white;
+    background-color: #7454d9;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight:200;
+    font-style: normal;
+}
+h1{
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+div{
+    font-size: 25px;
+    display: flex;
+    justify-content:space-around;
+}
+section{
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 35px;
+}
+#sobreNos{
+    display: block;
+    text-align: center;
+}
+#contatos{
+    display: block;
+    text-align: center;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
+    color: white;
+    height: 30px;
+    padding: 0 15px;
+}
+.buttonYellow {
+    display: flex;
+    background: #f1d958;
+    user-select: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+}
+.buttonBlue{
+    display: flex;
+    background: #94d1e4;
+    user-select: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+}
