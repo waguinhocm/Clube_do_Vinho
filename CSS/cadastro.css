@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
 
@@ -10,22 +11,19 @@ nav{
     align-items: center;
     background-color: #7454d9;
     color: white;
-    height: 10rem;
     padding: 0 1.5rem;
 }
 
 body{
     background-color: #7454d9;
-    
-
-
 }
 .buttonYellow {
     display: flex;
     background: #f1d958;
     user-select: none;
     cursor: pointer;
-    padding: 20px 40px;
+    padding: 10px 40px;
+    height: 40px;
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
@@ -39,7 +37,8 @@ body{
     background: #94d1e4;
     user-select: none;
     cursor: pointer;
-    padding: 20px 40px;
+    padding: 10px 40px;
+    height: 40px;
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
@@ -54,31 +53,43 @@ ul {
 a{
     text-decoration: none;
     color: white;
+    text-align: center; 
+    flex: 1;
+    white-space: nowrap;
 }
 div{
-    color: white;
+    color: rgb(33, 32, 32);
     width: 500px;
-    margin: 20px;
+    margin-left: 50px;
     font-family: monospace;
-
 }
+input {
+    width: 25rem;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+  }
 form{
-    text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     background-color:#f1d958;
-    padding: 40px;
-
+    width: 500px;
+    height: 480px;
+    margin: auto;
+    border-radius: 16px;
 }
 section{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     text-decoration: none;
 }
 
 h1{
     font-family: "Montserrat", serif;
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
+    margin-bottom: 18px;
     color: white
 }
 
@@ -89,5 +100,32 @@ h1{
     background-color: #7454d9;
     color: white;
     height: 100px;
-    padding: 200px 15px;
+    padding: 10px 15px;
 }
+#cadastrar{
+    cursor: pointer;
+    background-color: red;
+}
+
+input.error {
+    border: solid 2px #992020;
+    background-color: #e6aaaa;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    color: #206620;
+  }
+  
+  .error-text {
+    display: none;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #992020;
+    margin-left: 80px;
+  }
+  
+  .visible {
+    display: block;
+  }
