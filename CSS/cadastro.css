@@ -57,12 +57,7 @@ a{
     flex: 1;
     white-space: nowrap;
 }
-div{
-    color: rgb(33, 32, 32);
-    width: 500px;
-    margin-left: 50px;
-    font-family: monospace;
-}
+
 input {
     width: 25rem;
     padding: 12px 10px;
@@ -71,20 +66,7 @@ input {
     border-radius: 10px;
     font-size: 16px;
   }
-form{
-    font-size: 20px;
-    background-color:#f1d958;
-    width: 500px;
-    height: 480px;
-    margin: auto;
-    border-radius: 16px;
-}
-section{
-    display: flex;
-    gap: 1rem;
-    text-decoration: none;
-}
-
+  
 h1{
     font-family: "Montserrat", serif;
     text-align: center;
@@ -92,7 +74,28 @@ h1{
     margin-bottom: 18px;
     color: white
 }
-
+form{
+    font-size: 18px;
+    background-color:#f1d958;
+    width: 500px;
+    height: 530px;
+    margin: auto;
+    border-radius: 16px;
+    padding-top: 25px;
+    
+}
+section{
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+}
+div{
+    font-size: 18px;
+    color: white;
+    width: 500px;
+    margin-left: 50px;
+    font-family: monospace;
+}
 .rodape{
     display: flex;
     justify-content: space-between;
@@ -101,10 +104,14 @@ h1{
     color: white;
     height: 100px;
     padding: 10px 15px;
+    position: absolute;
+    bottom: 0;
 }
 #cadastrar{
     cursor: pointer;
-    background-color: red;
+    background-color: #94d1e4;
+    width: 300px;
+    margin-left: 50px;
 }
 
 input.error {

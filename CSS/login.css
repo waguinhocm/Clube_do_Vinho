@@ -1,26 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #7454d9;
     color: white;
-    height: 10rem;
     padding: 0 1.5rem;
 }
+
 body{
-    
-    color: white;
     background-color: #7454d9;
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight:200;
-    font-style: normal;
 }
-h1{
-    font-size: 32px;
-    text-align: center;
+.buttonYellow {
+    display: flex;
+    background: #f1d958;
+    user-select: none;
+    cursor: pointer;
+    padding: 10px 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
     color: white;
-    
+}
+.buttonBlue{
+    display: flex;
+    background: #94d1e4;
+    user-select: none;
+    cursor: pointer;
+    padding: 10px 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
 }
 ul {
     list-style: none;
@@ -28,11 +53,56 @@ ul {
 a{
     text-decoration: none;
     color: white;
+    text-align: center; 
+    flex: 1;
+    white-space: nowrap;
+}
+
+form{
+    font-size: 18px;
+    background-color:#f1d958;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    border-radius: 16px;
+    padding-top: 25px;
+}
+input {
+    width: 25rem;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+section{
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+h1{
+    font-family: "Montserrat", serif;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 18px;
+    color: white
+}
+h2{
+    font-family: "Montserrat", serif;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 18px;
+    color: white
 }
 div{
-    font-size: 25px;
-    display: flex;
-    justify-content:space-around;
+    font-size: 18px;
+    color:white;
+    width: 500px;
+    margin-left: 50px;
+    font-family: monospace;
 }
 section{
     display: flex;
@@ -59,32 +129,36 @@ footer{
     color: white;
     height: 30px;
     padding: 0 15px;
+    position: absolute;
+    bottom: 0px;
 }
-.buttonYellow {
-    display: flex;
-    background: #f1d958;
-    user-select: none;
+
+#login{
     cursor: pointer;
-    padding: 20px 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    color: white;
+    background-color: #94d1e4;
+    width: 300px;
+    margin-left: 50px;
 }
-.buttonBlue{
-    display: flex;
-    background: #94d1e4;
-    user-select: none;
-    cursor: pointer;
-    padding: 20px 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    color: white;
-}
+
+input.error {
+    border: solid 2px #992020;
+    background-color: #e6aaaa;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    color: #206620;
+  }
+  
+  .error-text {
+    display: none;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #992020;
+    margin-left: 80px;
+  }
+  
+  .visible {
+    display: block;
+  }
