@@ -46,6 +46,9 @@ footer{
     display: block;
     text-align: center;
 }
+.paginas{
+    padding-right: 30px;
+}
 .rodape{
     display: flex;
     justify-content: space-between;
