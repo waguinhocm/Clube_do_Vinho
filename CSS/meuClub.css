@@ -28,35 +28,6 @@ div{
 
 }
 
-section{
-    display: flex;
-    gap: 4rem;
-    text-decoration: none;
-
-}
-
-footer{
-    margin-top: 365px;
-}
-#sobreNos{
-    display: block;
-    text-align: center;
-}
-#contatos{
-    display: block;
-    text-align: center;
-}
-.rodape{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #7454d9;
-    color: white;
-    height: 30px;
-    padding: 0 30px;
-    margin-top: auto;
-
-}
 .buttonYellow {
     display: flex;
     background: #f1d958;
@@ -85,10 +56,121 @@ footer{
     cursor: pointer;
     color: white;
 }
-.parceiros{
-    display: block;
-    margin: 5rem;
+
+section{
+    display: flex;
+    gap: 4rem;
+    text-decoration: none;
+
 }
-.parceiro{
-    margin: 3rem;
+
+footer{
+    margin-top: 365px;
+}
+#sobreNos{
+    display: block;
+    text-align: center;
+}
+#contatos{
+    display: block;
+    text-align: center;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
+    color: white;
+    height: 30px;
+    padding: 0 30px;
+    margin-top: auto;
+}
+
+#more-posts {
+    margin-top: 60px;
+    font-size: 20px;
+    letter-spacing: 1px;
+ }
+ #more-posts strong {
+    margin-right: 450px;
+    margin-left: 150px;
+ }
+ #more-posts img {
+    height: 40px; 
+    margin-left: 100px;
+    position: absolute;
+ }
+
+ #more-posts button {
+    padding: 8px 20px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+ }
+ #more-posts button, 
+#nav li a, 
+#nav_vinhos li a {
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#nav a:hover, 
+#nav_vinhos a:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+#wines {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 90px;
+}
+
+
+.wineContour {
+    background-color: #f1d958; 
+    border-radius: 15px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    color: black;
+    
+}
+
+.wineContour img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+
+.rating {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: rgb(172, 6, 6);
+    color: white;
+    border-radius: 100%;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.wineButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.wineButtons button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
 }
