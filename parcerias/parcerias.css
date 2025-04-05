@@ -34,7 +34,7 @@ a{
     text-decoration: none;
     color: white;
 }
-div{
+main{
     display: flex;
     justify-content: space-evenly;
 }
