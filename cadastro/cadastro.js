@@ -7,42 +7,39 @@ const mensagemErroEmail = mensagensErro[1]
 const mensagemErroSenha = mensagensErro[2] 
 
 function exibirErroNomeUsuario() {
-    inputNomeUsuario.classList.add("error")
-    inputNomeUsuario.classList.remove("correct")
     mensagemErroNomeUsuario.classList.add("visible")
 }
 
 function exibirSucessoNomeUsuario() {
-    inputNomeUsuario.classList.add("correct")
-    inputNomeUsuario.classList.remove("error")
     mensagemErroNomeUsuario.classList.remove("visible")
 } 
 function exibirErroEmail() {
-    inputEmail.classList.add("error")
-    inputEmail.classList.remove("correct")
     mensagemErroEmail.classList.add("visible")
 }
 
 function exibirSucessoEmail() {
-    inputEmail.classList.add("correct")
-    inputEmail.classList.remove("error")
     mensagemErroEmail.classList.remove("visible")
 } 
 
 function exibirErroSenha() {
-    inputSenha.classList.add("error")
-    inputSenha.classList.remove("correct")
     mensagemErroSenha.classList.add("visible")
 }
 
 function exibirCorretoSenha() {
-    inputSenha.classList.add("correct")
-    inputSenha.classList.remove("error")
     mensagemErroSenha.classList.remove("visible") 
 }
 inputNomeUsuario.addEventListener("input", (evento) => {
     const valor = evento.target.value
-    if (valor.length < 5) {
+    const contemNumeros = /[0-9]/.test(valor);
+    if(contemNumeros) {
+        mensagemErroNomeUsuario.innerText = "seu nome não pode conter números"
+        exibirErroNomeUsuario()
+    } 
+    else if (valor.length === 0) {
+        mensagemErroNomeUsuario.innerText = ""
+        exibirErroNomeUsuario()
+    }
+    else if (valor.length < 5) {
         mensagemErroNomeUsuario.innerText = "Mínimo de 5 caracteres"
         exibirErroNomeUsuario()
     } else {
@@ -55,7 +52,11 @@ inputSenha.addEventListener("input", (evento) => {
     const possuiMaiusculo = valor.toLowerCase() !== valor
     const possuiMinuscula = valor.toLowerCase() !== valor
 
-    if (valor.length < 8) {
+    if (valor.length === 0) {
+        mensagemErroSenha.innerText = ""
+        exibirErroSenha()
+    } 
+    else if (valor.length < 8) {
         mensagemErroSenha.innerText = "Senha muito curta"
         exibirErroSenha()
     } 
