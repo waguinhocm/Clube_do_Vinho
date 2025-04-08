@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta chraset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale 1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../CSS/login.css">
-        <title> Login - Clube Do Vinho</title>
+        <link rel="stylesheet" href="../CSS/cadastro.css">
+        <script src="../Js/cadastro.js" defer></script>
+        <title> Crie sua conta - Clube do Vinho</title>
 
     </head>
-    <body>
+
+    <body>  
    
         <header>
             <nav>
                 <div>
-                    <a href="home.html"><img src="../imagens/Logo_pag.png" alt="Logotipo"height="130" width="150"></a>
+                    <a href="home.html"><img src="../imagens/Logo_pag.png" ></a>
                 </div>
                 <section class="btn">
-                    <a href="home.html" class="buttonYellow">Home</a>
+                    <a href="../home.html" class="buttonYellow">Home</a>
                     <a href="meuClube.html" class= "buttonBlue">Meu Clube</a>
                     <a href="parcerias.html"class="buttonYellow">Parcerias</a>
                 </section>
@@ -30,28 +32,37 @@
                 </div>
             </nav>
         </header>
-
-        <h1>Bem-vindo a maior comunidade dos apaixonados por vinho!</h1>
-
-        <form>
-        <h2>Login</h2> 
-        <div>  <label for="email">Email: </label>
-            <br>
-            <input type="email" id="email"  placeholder="email@email.com">
+        
+        <h1> Crie sua conta aqui. Entre para a maior comunidade dos amantes de vinho!</h1>
+    </header>
+    <body>
+           <form>
+        
+            <div>
+                <label for="nomeCompleto">Nome completo: </label><br>
+                <input type="text" id="signUp-usuario" name="signUp-usuario" class="error" placeholder="Seu nome completo" required>  
+                <p class="error-text visible">*Digite seu nome completo</p>
+<br>
+                <label for="dataNascimento">Data de Nascimento: </label><br>
+                <input type="date" id="dataNascimento" required>
+                <br>
+                <label for="email">Email: </label><br>
+                <input type="email" id="signUp-email"  placeholder="email@email.com" class="error" required>
+                <p class="error-text visible">*Digite um email válido</p>
+                <br>
+                <label for="password">Senha: </label><br>
+                <input type="password" id="signUp-senha" name="signUp-senha" class="correct" required>
+                <p class="error-text">*Senha inválida</p>
+                <br>
+                <input id="cadastrar" type="submit" value="Cadastrar">
+             </div>  
             
-         <label for="password">Senha: </label><br>
-         <input type="password" id="signUp-senha" name="signUp-senha" class="correct" required>
-         <p class="error-text">*Senha inválida</p>
-         <br>
-            <input id="login" type="submit" value= "Login">
-         </div>
-         </form>
-
-
-         <footer>
+        </form>
+        
+        <footer>
             <nav class="rodape">
                 <div>
-                    <a href="home.html"><img src="../imagens/Logo_pag.png" alt="Logotipo"height="42" width="52"></a>
+                    <a href="home.html"><img src="../imagens/Logo_pag.png"  alt="Logotipo" height="42" width="52"></a>
                     <h6>Copyright 2025 Clube do Vinho</h6>
                 </div>
     
@@ -68,5 +79,6 @@
             </nav>
         </footer> 
     
-        </body>
+    </body>
 </html>
+

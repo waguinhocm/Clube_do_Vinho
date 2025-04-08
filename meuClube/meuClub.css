@@ -1,3 +1,4 @@
+<<<<<<< HEAD:CSS/meuClub.css
 nav{
     display: flex;
     justify-content: space-between;
@@ -173,4 +174,99 @@ footer{
     border: none;
     font-size: 14px;
     cursor: pointer;
+=======
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
+    color: white;
+    height: 10rem;
+    padding-left: 70px;
+    padding-right: 300px; 
+}
+
+body{
+
+    color: white;
+    background-color: #7454d9;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight:200;
+    font-style: normal;
+
+
+}
+
+
+div{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+section{
+    display: flex;
+    gap: 4rem;
+    text-decoration: none;
+
+}
+
+footer{
+    margin-top: 365px;
+}
+#sobreNos{
+    display: block;
+    text-align: center;
+}
+#contatos{
+    display: block;
+    text-align: center;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
+    color: white;
+    height: 30px;
+    padding: 0 30px;
+    margin-top: auto;
+
+}
+.buttonYellow {
+    display: flex;
+    background: #f1d958;
+    user-select: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+}
+.buttonBlue{
+    display: flex;
+    background: #94d1e4;
+    user-select: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+}
+.parceiros{
+    display: block;
+    margin: 5rem;
+}
+.parceiro{
+    margin: 3rem;
+>>>>>>> 88821cc97652e70679137260adec3b8749b4107e:meuClube/meuClub.css
 }
