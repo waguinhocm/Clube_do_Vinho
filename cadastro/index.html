@@ -6,9 +6,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../CSS/cadastro.css">
-        <script src="../Js/cadastro.js" defer></script>
-        <title> Crie sua conta - Clube do Vinho</title>
+        <link rel="stylesheet" href="../cadastro/cadastro.css">
+        <script src="../cadastro/cadastro.js" defer></script>
+        <title> Crie sua conta</title>
 
     </head>
 
@@ -38,23 +38,29 @@
     <body>
            <form>
         
-            <div>
-                <label for="nomeCompleto">Nome completo: </label><br>
-                <input type="text" id="signUp-usuario" name="signUp-usuario" class="error" placeholder="Seu nome completo" required>  
-                <p class="error-text visible">*Digite seu nome completo</p>
-<br>
+            <div id="cadastro">
+                <label for="nomeCompleto" id="nomeCompleto">Nome completo: </label><br>
+                <input type="text" id="signUp-usuario" name="signUp-usuario" placeholder="Seu nome completo" required>
+                 <p class="error-text"></p> 
+                <br>
                 <label for="dataNascimento">Data de Nascimento: </label><br>
                 <input type="date" id="dataNascimento" required>
+                
                 <br>
                 <label for="email">Email: </label><br>
-                <input type="email" id="signUp-email"  placeholder="email@email.com" class="error" required>
-                <p class="error-text visible">*Digite um email válido</p>
+                <input type="email" id="signUp-email"  placeholder="email@email.com" required>
+                <p class="error-text"></p> 
+
                 <br>
                 <label for="password">Senha: </label><br>
-                <input type="password" id="signUp-senha" name="signUp-senha" class="correct" required>
-                <p class="error-text">*Senha inválida</p>
+                <input type="password" id="signUp-senha" name="signUp-senha" required>
+                <p class="error-text"></p> 
+
                 <br>
+                <div id="buttons">
                 <input id="cadastrar" type="submit" value="Cadastrar">
+                <a id="cadastrar" href="../HTML/login.html">Login</a>
+                </div>
              </div>  
             
         </form>
@@ -82,3 +88,7 @@
     </body>
 </html>
 
+        </footer> 
+    
+    </body>
+</html>

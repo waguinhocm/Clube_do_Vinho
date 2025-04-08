@@ -57,7 +57,21 @@ a{
     flex: 1;
     white-space: nowrap;
 }
-
+#cadastro{
+    color: rgb(33, 32, 32);
+    width: 500px;
+    margin-left: 50px;
+    font-family: monospace;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+}
+#buttons a {
+    background-color: #7454d9;
+    margin-right: 100px;
+    border-radius: 50px
+}
 input {
     width: 25rem;
     padding: 12px 10px;
@@ -66,7 +80,21 @@ input {
     border-radius: 10px;
     font-size: 16px;
   }
-  
+form{
+    font-size: 20px;
+    background-color:#f1d958;
+    width: 500px;
+    height: 480px;
+    margin: auto;
+    border-radius: 16px;
+    padding-top: 25px;
+}
+section{
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+}
+
 h1{
     font-family: "Montserrat", serif;
     text-align: center;
@@ -74,28 +102,7 @@ h1{
     margin-bottom: 18px;
     color: white
 }
-form{
-    font-size: 18px;
-    background-color:#f1d958;
-    width: 500px;
-    height: 530px;
-    margin: auto;
-    border-radius: 16px;
-    padding-top: 25px;
-    
-}
-section{
-    display: flex;
-    gap: 1rem;
-    text-decoration: none;
-}
-div{
-    font-size: 18px;
-    color: white;
-    width: 500px;
-    margin-left: 50px;
-    font-family: monospace;
-}
+
 .rodape{
     display: flex;
     justify-content: space-between;
@@ -104,27 +111,11 @@ div{
     color: white;
     height: 100px;
     padding: 10px 15px;
-    position: absolute;
-    bottom: 0;
 }
 #cadastrar{
     cursor: pointer;
-    background-color: #94d1e4;
-    width: 300px;
-    margin-left: 50px;
-}
-
-input.error {
-    border: solid 2px #992020;
-    background-color: #e6aaaa;
-    color: #662020;
-  }
-  
-  input.correct {
-    background-color: #BBCCBB;
-    color: #206620;
-  }
-  
+    background-color: red;
+}  
   .error-text {
     display: none;
     font-size: .8rem;

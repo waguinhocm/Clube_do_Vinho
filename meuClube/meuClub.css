@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:CSS/meuClub.css
 nav{
     display: flex;
@@ -175,6 +176,8 @@ footer{
     font-size: 14px;
     cursor: pointer;
 =======
+=======
+>>>>>>> c320b9040315af9e174a160597e0a8f01fb1fbd3
 nav{
     display: flex;
     justify-content: space-between;
@@ -223,6 +226,12 @@ footer{
     display: block;
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+.paginas{
+    padding-right: 30px;
+}
+>>>>>>> c320b9040315af9e174a160597e0a8f01fb1fbd3
 .rodape{
     display: flex;
     justify-content: space-between;
@@ -268,5 +277,8 @@ footer{
 }
 .parceiro{
     margin: 3rem;
+<<<<<<< HEAD
 >>>>>>> 88821cc97652e70679137260adec3b8749b4107e:meuClube/meuClub.css
+=======
+>>>>>>> c320b9040315af9e174a160597e0a8f01fb1fbd3
 }
