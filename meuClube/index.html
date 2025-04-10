@@ -13,19 +13,27 @@
     <header>
         <nav class="paginas">
             <div>
-                <a href="../index.html"><img src="../imagens/Logo_pag.png" alt="Logotipo"height="130" width="150"></a>
+                <a href="../index.html"><img src="../imagens/Logo_pag.png" alt="Logotipo"></a>
             </div>
-            <section class="btn">
-                <a href="../index.html" class="buttonYellow">Home</a>
-                <a href="../meuClube/index.html" class= "buttonBlue">Meu Clube</a>
-                <a href="../parcerias/index.html"class="buttonYellow">Parcerias</a>
-            </section>
-            <div>
-                <img src="../imagens/asteriscoAmarelo.png" alt="Asterisco"height="50" width="50">
-                <a href="https://www.google.com/"></a><img src="../imagens/Lupa_pesquisar.png" alt="Pesquisar"height="50" width="50">
-                <a href="../meuClube/index.html"><img src="../imagens/usuario_sem_login.png" alt="Usuario sem Login"height="50" width="50"></a>
-                <a href=""></a><img src="../imagens/menu.png" alt="Menu de opções"height="50" width="50">
-            </div>
+            <div id="nav">
+                <ul id="navegacao">
+                    <li><a href="../index.html" style="background-color: #94d1e4;">HOME</a></li>
+                    <li><a href="./meuClube/index.html">MEU CLUBE</a></li>
+                    <li><a href="./login/index.html" style="background-color: #94d1e4;">LOGIN</a></li>
+                    <li><a href="./parcerias/index.html">PARCERIAS</a></li>
+                </ul>
+                </div>
+
+                <div id="search-user">
+                    <img src="../imagens/asteriscoAmarelo.png" alt="asteriscoAmarelo" class="star">
+                    <label for="pesquisar" >
+                        <img src="../imagens/Lupa_pesquisar.png" alt="Lupa" class="interagir">
+                    </label>
+                    <input type="text" placeholder="Pesquisar" id="pesquisar">
+                    <img src="../imagens/usuario_sem_login.png" alt="usuarioLogin" class="interagir">
+                    <img src="../imagens/menu.png" alt="menu" class="interagir">
+                </div>
+
         </nav>
         <nav>
             <div>
@@ -45,11 +53,7 @@
     </header>
     
     <main>
-
-
-
-
-        
+                
        
     </div>
 </div>
@@ -61,13 +65,15 @@
             <article>
                 <div>  
                 <img src="https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/866-vinho-concha-y-toro-reservado-cabernet-sauvignon-750ml.jpg?fm=webp&p=product_regular&s=d4e4ba91debaff5a46dbe143563224ec" height="300x" width="150px" alt="Imagem de um vinho">
-        
-                </div>
-                <p>Vinho Reservado Concha y Toro<p></p>
-                    <button>❤</button>
-                    <button>➕</button>
-                    <button>...</button>
                 
+                </div>
+            <div class="wineButtons">
+                <p>Vinho Reservado Concha y Toro</p>
+                <button>❤️</button>
+                <button>➕</button>
+                <button>...</button>
+            </div>
+
             </article>
             <br><br><br>
             <article class="wineContour">
@@ -78,11 +84,13 @@
                 
         
                 </div>
+                <div class="wineButtons">
                     <p>Vinho Casillero Del Diablo</p>
-                    <button>❤</button>
+                    <button>❤️</button>
                     <button>➕</button>
                     <button>...</button>
-                
+                </div>
+
             </article>
 
         </article>
@@ -95,11 +103,13 @@
            
            
             </div>
+            <div class="wineButtons">
                 <p>Vinho Benjamin</p>
-                <button>❤</button>
+                <button>❤️</button>
                 <button>➕</button>
                 <button>...</button>
-            
+            </div>
+
         </article>
     </article>
     <br><br><br>
@@ -110,12 +120,17 @@
         <img src="https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/623-vinho-casal-garcia-branco-750ml.jpg?s=e705af184a4f5afcc5bbbfcd4d98482c" height="300px" width="150px" alt="Imagem de um vinho">
         
         </div>
+
+        <div class="wineButtons">
             <p>Vinho Casal Garcia</p>
-            <button>❤</button>
+            <button>❤️</button>
             <button>➕</button>
             <button>...</button>
+        </div>   
         
     </article>
+
+    
 
         </section>
     </main>
