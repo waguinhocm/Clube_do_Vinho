@@ -17,6 +17,20 @@ nav{
 body{
     background-color: #7454d9;
 }
+
+#top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+#nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 15px;
+
+} 
 .buttonYellow {
     display: flex;
     background: #f1d958;
@@ -30,7 +44,7 @@ body{
     border: none;
     border-radius: 2px;
     cursor: pointer;
-    color: white;
+    color: black;
 }
 .buttonBlue{
     display: flex;
@@ -45,7 +59,49 @@ body{
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    color: black;
+}
+
+#search-user {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px; 
+    margin-bottom: 80px;
+    margin-right: 40px;
+}
+
+#search-user img {
+    height: 40px; 
+}
+.interagir {
+    cursor: pointer;
+}
+.star {
+    margin-right: 12px;
+}
+
+#pesquisar {
+    padding: 8px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 8px;
+    background-color: transparent;
+    margin-bottom: 6px;
     color: white;
+    text-align: center;
+    
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font: 13px verdana, arial, sans-serif;
+ }
+
+ section{
+    display: flex;
+    gap: 4rem;
+    text-decoration: none;
+
 }
 ul {
     list-style: none;
@@ -110,29 +166,6 @@ section{
     text-decoration: none;
 }
 
-footer{
-    margin-top: 35px;
-}
-#sobreNos{
-    display: block;
-    text-align: center;
-}
-#contatos{
-    display: block;
-    text-align: center;
-}
-.rodape{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #7454d9;
-    color: white;
-    height: 30px;
-    padding: 0 15px;
-    position: absolute;
-    bottom: 0px;
-}
-
 #login{
     cursor: pointer;
     background-color: #94d1e4;
@@ -162,3 +195,26 @@ input.error {
   .visible {
     display: block;
   }
+
+footer{
+    margin-top: 35px;
+}
+#sobreNos{
+    display: block;
+    text-align: center;
+}
+#contatos{
+    display: block;
+    text-align: center;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
+    color: white;
+    height: 30px;
+    padding: 0 15px;
+    position: absolute;
+    bottom: 0px;
+}

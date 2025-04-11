@@ -17,7 +17,6 @@ nav{
 
 body{
     
-    color: white;
     background-color: #7454d9;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-optical-sizing: auto;
@@ -104,40 +103,7 @@ body{
     font: 13px verdana, arial, sans-serif;
  }
 
- #more-posts {
-    margin-top: 60px;
-    font-size: 20px;
-    letter-spacing: 1px;
- }
- #more-posts strong {
-    margin-right: 450px;
-    margin-left: 150px;
- }
- #more-posts img {
-    height: 40px; 
-    margin-left: 100px;
-    position: absolute;
- }
-
- #more-posts button {
-    padding: 8px 20px;
-    border: 3px solid white;
-    border-radius: 20px;
-    font-size: 12px;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
- }
- #more-posts button, 
-#nav li a, 
-#nav_vinhos li a {
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-
-
-section{
+ section{
     display: flex;
     gap: 4rem;
     text-decoration: none;
@@ -165,8 +131,7 @@ section{
     padding: 10px;
     text-align: center;
     position: relative;
-    color: black;
-    
+    color: black
 }
 
 .wineContour img {
@@ -202,6 +167,35 @@ section{
     cursor: pointer;
 }
 
+.buttonYellow {
+    display: flex;
+    background: #f1d958;
+    user-select: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: black;
+}
+.buttonBlue{
+    display: flex;
+    background: #94d1e4;
+    user-select: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: black;
+}
+
 
 footer{
     margin-top: 365px;
@@ -227,32 +221,4 @@ footer{
     padding: 0 30px;
     margin-top: auto;
 
-}
-.buttonYellow {
-    display: flex;
-    background: #f1d958;
-    user-select: none;
-    cursor: pointer;
-    padding: 20px 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    color: white;
-}
-.buttonBlue{
-    display: flex;
-    background: #94d1e4;
-    user-select: none;
-    cursor: pointer;
-    padding: 20px 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    color: white;
 }
