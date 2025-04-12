@@ -97,5 +97,6 @@ footer{
     margin: 5rem;
 }
 .parceiro{
+    display: flex;
     margin: 3rem;
 }
