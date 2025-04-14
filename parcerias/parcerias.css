@@ -3,17 +3,16 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #7454d9;
-    color: white;
+    color: whitebla;
     height: 10rem;
     padding: 0 1.5rem;
     padding-right: 20px;
 }
 
 body{
-    
     color: white;
     background-color: #7454d9;
-    font-family: "Montserrat", serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-optical-sizing: auto;
     font-weight:200;
     font-style: normal;
@@ -55,7 +54,45 @@ footer{
     display: block;
     text-align: center;
 }
-.rodape{
+
+.buttonYellow {
+    display: flex;
+    background: #f1d958;
+    user-select: none;
+    cursor: pointer;
+    padding: 7px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    color: black;
+}
+.buttonBlue{
+    display: flex;
+    background: #94d1e4;
+    user-select: none;
+    cursor: pointer;
+    padding: 7px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    color: black;
+}
+.parceiros{
+    display: block;
+    margin: 1rem 3rem 1rem 3rem;
+    
+}
+.parceiro{
+    display: flex;
+    margin: 2rem;
+}
+.rodape {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,39 +101,21 @@ footer{
     height: 30px;
     padding: 0 15px;
 }
-.buttonYellow {
+.navRodape {
     display: flex;
-    background: #f1d958;
-    user-select: none;
-    cursor: pointer;
-    padding: 20px 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
     color: white;
+    height: 30px;
+    padding: 0 15px;
 }
-.buttonBlue{
+.redesRodape {
     display: flex;
-    background: #94d1e4;
-    user-select: none;
-    cursor: pointer;
-    padding: 20px 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
     color: white;
-}
-.parceiros{
-    display: block;
-    margin: 5rem;
-}
-.parceiro{
-    display: flex;
-    margin: 3rem;
+    height: 30px;
+    padding: 0 15px;
 }
