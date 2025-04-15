@@ -3,6 +3,19 @@
     margin: 0;
     padding: 0;
  }
+
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7454d9;
+    color: white;
+    height: 10rem;
+    padding-left: 70px;
+    padding-right: 300px; 
+}  
+
+
  body{
     
     color: white;
