@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
+    <script src="cadastroHome.js" defer></script>
     <title>HOME</title>
 </head>
 <body>
@@ -29,73 +30,115 @@
             
             <div id="search-user">
                 <img src="./imagens/asteriscoAmarelo.png" alt="asteriscoAmarelo" class="star">
-                <label for="pesquisar" >
-                    <img src="./imagens/Lupa_pesquisar.png" alt="Lupa" class="interagir">
+                <label for="pesquisar">
+                  <img src="./imagens/Lupa_pesquisar.png" alt="Lupa" class="interagir">
                 </label>
                 <input type="text" placeholder="Pesquisar" id="pesquisar">
-                <img src="./imagens/usuario_sem_login.png" alt="usuarioLogin" class="interagir">
-                <img src="./imagens/menu.png" alt="menu" class="interagir">
-            </div>
+
+                <img src="./imagens/usuario_sem_login.png" alt="usuarioLogin" class="interagir" id="dropdown-trigger-login">
+                <img src="./imagens/menu.png" alt="menu" class="interagir" id="dropdown-trigger-menu"> 
+                
+
+                <ul id="dropdown-login" class="dropdown">
+                  <li><a href="./login/index.html">LOGIN</a></li>
+                  <li><a href="./cadastro/index.html">CADASTRO</a></li>
+                </ul>
+                
+                <ul id="dropdown-menu" class="dropdown">
+                    <li><a href="./index.html" style="background-color: #94d1e4;" id="homeMenuHover">HOME</a></li>
+                    <li><a href="./meuClube/">MEU CLUBE</a></li>
+                    <li><a href="./login/index.html" style="background-color: #94d1e4;" id="homeMenuHover">LOGIN</a></li>
+                    <li><a href="./parcerias/index.html">PARCERIAS</a></li>
+                </ul>
+              </div>
         </div>
     </nav>
     </header>
     
-    <main>
-        <div id="more-posts">
+<main>
+    <div id="more-posts">
         <img src="./imagens/asteriscoAmarelo.png" alt="asteriscoAmarelo">
         <strong>POSTAGEMS MAIS POPULARES DO CLUB</strong>
         <button>Ver Mais</button>
         <br><br><br>
-       
     </div>
+    
     <section id="wines">
         <article class="wineContour">
-            <span class="rating">4.1</span>
+            <span class="rating">4.8</span>
             <div>  
                 <img src="https://d1zvfmhlebc91g.cloudfront.net/fit-in/456x751/filters:fill(ffffff)/filters:background_color(ffffff)/filters:quality(100)/n49shopv2_boccatispa/images/products/4598/5d93b71770bea-vinho-casillero-del-diablo-reserva-merlot_.jpg" alt="Imagem de um vinho">
                 <p>Vinho El Ninot de Paper</p>
             </div>
             <div class="wineButtons">
-                <button>❤️</button>
-                <button>➕</button>
-                <button>...</button>
+                <button class="btn-favorite" data-id="vinho0">❤️</button>
+                <button class="btn-add" data-id="vinho0">➕</button>
+                <button class="btn-review" data-id="vinho0">...</button>
+
+                <ul id="dropdown-menu-vinho" class="dropdown-vinho">
+                    <li><a href="#">JÁ BEBI</a></li>
+                    <li><a href="#">QUERO BEBER</a></li>
+                    <li><a href="#" >FAVORITAR</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                </ul>
             </div>
         </article>
     
         <article class="wineContour">
             <span class="rating">4.7</span>
-            <div>
+            <div>  
                 <img src="https://d1zvfmhlebc91g.cloudfront.net/fit-in/456x751/filters:fill(ffffff)/filters:background_color(ffffff)/filters:quality(100)/n49shopv2_boccatispa/images/products/4598/5d93b71770bea-vinho-casillero-del-diablo-reserva-merlot_.jpg" alt="Imagem de um vinho">
-                <p>Vinho Casal Garcia Sweet</p>
+                <p>Vinho El Ninot de Paper</p>
             </div>
             <div class="wineButtons">
-                <button>❤️</button>
-                <button>➕</button>
-                <button>...</button>
+                <button class="btn-favorite" data-id="vinho1">❤️</button>
+                <button class="btn-add" data-id="vinho1">➕</button>
+                <button class="btn-review" data-id="vinho1">...</button>
+
+                <ul id="dropdown-menu-vinho" class="dropdown-vinho">
+                    <li><a href="#">JÁ BEBI</a></li>
+                    <li><a href="#">QUERO BEBER</a></li>
+                    <li><a href="#" >FAVORITAR</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                </ul>
             </div>
         </article>
         <article class="wineContour">
-            <span class="rating">4.7</span>
-            <div>
+            <span class="rating">4.4</span>
+            <div>  
                 <img src="https://d1zvfmhlebc91g.cloudfront.net/fit-in/456x751/filters:fill(ffffff)/filters:background_color(ffffff)/filters:quality(100)/n49shopv2_boccatispa/images/products/4598/5d93b71770bea-vinho-casillero-del-diablo-reserva-merlot_.jpg" alt="Imagem de um vinho">
-                <p>Vinho Casal Garcia Sweet</p>
+                <p>Vinho El Ninot de Paper</p>
             </div>
             <div class="wineButtons">
-                <button>❤️</button>
-                <button>➕</button>
-                <button>...</button>
+                <button class="btn-favorite" data-id="vinho2">❤️</button>
+                <button class="btn-add" data-id="vinho2">➕</button>
+                <button class="btn-review" data-id="vinho2">...</button>
+
+                <ul id="dropdown-menu-vinho" class="dropdown-vinho">
+                    <li><a href="#">JÁ BEBI</a></li>
+                    <li><a href="#">QUERO BEBER</a></li>
+                    <li><a href="#" >FAVORITAR</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                </ul>
             </div>
         </article>
         <article class="wineContour">
-            <span class="rating">4.7</span>
-            <div>
+            <span class="rating">4.5</span>
+            <div>  
                 <img src="https://d1zvfmhlebc91g.cloudfront.net/fit-in/456x751/filters:fill(ffffff)/filters:background_color(ffffff)/filters:quality(100)/n49shopv2_boccatispa/images/products/4598/5d93b71770bea-vinho-casillero-del-diablo-reserva-merlot_.jpg" alt="Imagem de um vinho">
-                <p>Vinho Casal Garcia Sweet</p>
+                <p>Vinho El Ninot de Paper</p>
             </div>
             <div class="wineButtons">
-                <button>❤️</button>
-                <button>➕</button>
-                <button>...</button>
+                <button class="btn-favorite" data-id="vinho3">❤️</button>
+                <button class="btn-add" data-id="vinho3">➕</button>
+                <button class="btn-review" data-id="vinho3">...</button>
+
+                <ul id="dropdown-menu-vinho" class="dropdown-vinho">
+                    <li><a href="#">JÁ BEBI</a></li>
+                    <li><a href="#">QUERO BEBER</a></li>
+                    <li><a href="#" >FAVORITAR</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                </ul>
             </div>
         </article>
     </section>
