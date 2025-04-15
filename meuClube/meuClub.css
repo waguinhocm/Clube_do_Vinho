@@ -4,7 +4,7 @@
     padding: 0;
  }
 
-nav{
+ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +34,13 @@ body{
     flex-direction: column;
     gap: 25px;
     margin-bottom: 15px;
+}
+
+#navegacao li, #nav_vinhos li {
+    text-align: center; 
+    flex: 1;
+    white-space: nowrap; 
+
 }
 
 #navegacao, #nav_vinhos {
@@ -131,7 +138,7 @@ body{
     padding: 10px;
     text-align: center;
     position: relative;
-    color: black
+    color: black;
 }
 
 .wineContour img {
@@ -196,29 +203,21 @@ body{
     color: black;
 }
 
-
-footer{
-    margin-top: 365px;
-}
-#sobreNos{
-    display: block;
-    text-align: center;
-}
-#contatos{
-    display: block;
-    text-align: center;
-}
-.paginas{
-    padding-right: 30px;
-}
 .rodape{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
+    text-decoration: none;
     background-color: #7454d9;
     color: white;
     height: 30px;
-    padding: 0 30px;
-    margin-top: auto;
+    padding: 0 15px;
+    margin-top: 10px;
+}
 
+.linksRodape{
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    color: white;
 }

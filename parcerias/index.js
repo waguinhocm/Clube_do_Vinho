@@ -1,6 +1,26 @@
 
 //Main - captura e manipulação de dados do DOM
 
+//Adicionando evento a imagem asterisco do Header
+
+let asterisco = document.getElementById('asterisco');
+
+asterisco.addEventListener('click', ()=> {
+    document.body.style.backgroundColor = "aquamarine";
+});
+asterisco.addEventListener('dblclick', ()=> {
+    document.body.style.backgroundColor = '#7454d9';
+});
+
+// Adicionando evento a imagem menu do Header
+
+let menu = document.getElementById('menuOpcoesHeader');
+menu.addEventListener('mouseover', ()=> {
+    alert('Neste menu você poderá acessar as opções de vinhos mais recomendados do site');
+});
+
+//Dados salvos em um array
+
 arrayParceiros = [
     {
         nome: "Evino",
@@ -98,9 +118,6 @@ navFooter.appendChild(sectionNavRodape);
 
 //Footer - Redes Sociais
 
-let sectionRedes = document.createElement("section");
-sectionRedes.classList.add("redesSociais");
-
 let arrayRedesSociais = [
     {
         nome: "Instagram",
@@ -119,6 +136,9 @@ let arrayRedesSociais = [
     },
 
 ];
+
+let sectionRedes = document.createElement("section");
+sectionRedes.classList.add("redesSociais");
 
 for (let i = 0; i < arrayRedesSociais.length; i++) {
     let redeSocial = arrayRedesSociais[i];
