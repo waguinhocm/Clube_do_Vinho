@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta chraset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale 1.0">
@@ -13,24 +13,33 @@
     </head>
 
     <body>
+        <nav>
+            <div id="top-bar">
+                <div id="logo-nav">
+                    <img src="/imagens/Logo_pag.png" alt="Logo">
+                </div>
 
-        <header>
-            <nav>
-                <div>
-                    <a href="../index.html"><img src="../imagens/Logo_pag.png" ></a>
+
+                <div id="nav">
+                    <ul id="navegacao">
+                        <li><a href= "/index.html" style="background-color: #94d1e4;">HOME</a></li>
+                        <li><a href="/meuClube/index.html" >MEU CLUBE</a></li>
+                        <li><a href= "/login/login.css" style="background-color: #94d1e4;">LOGIN</a></li>
+                        <li><a href="/parcerias/index.html" >PARCERIAS</a></li>
+                    </ul>
                 </div>
-                <section class="btn">
-                    <a href="../index.html" class="buttonYellow">Home</a>
-                    <a href="../meuClube/index.html" class= "buttonBlue">Meu Clube</a>
-                    <a href="../parcerias/index.html"class="buttonYellow">Parcerias</a>
-                </section>
-                <div>
-                    <img src="../imagens/asteriscoAmarelo.png" alt="Asterisco"height="50" width="50">
-                    <a href="https://www.google.com/"></a><img src="../imagens/Lupa_pesquisar.png" alt="Pesquisar"height="50" width="50">
-                    <a href="../login/index.html src="../imagens/usuario_sem_login.png" alt="Usuario sem Login"height="50" width="50"></a>
-                    <a href=""></a><img src="../imagens/menu.png" alt="Menu de opções"height="50" width="50">
+                
+                <div id="search-user">
+                    <img src="/imagens/asteriscoAmarelo.png" alt="asteriscoAmarelo" class="star">
+                    <label for="pesquisar" >
+                        <img src="/imagens/Lupa_pesquisar.png" alt="Lupa" class="interagir">
+                    </label>
+                    <input type="text" placeholder="Pesquisar" id="pesquisar">
+                    <img src="/imagens/usuario_sem_login.png"alt="usuarioLogin" class="interagir">
+                    <img src="/imagens/menu.png" alt="menu" class="interagir">
                 </div>
-            </nav>
+            </div>
+        </nav>
         </header>
         
         <h1> Crie sua conta aqui. Entre para a maior comunidade dos amantes de vinho!</h1>
@@ -57,10 +66,11 @@
                 <p class="error-text"></p> 
 
                 <br>
-                <div id="buttons">
-                <input id="cadastrar" type="submit" value="Cadastrar">
-                <a id="cadastrar" href="../login/index.html">Login</a>
-                </div>
+                    <br>
+                    <input  id= "cadastrar" type="submit" value= "Cadastrar"> 
+                    <br>
+                    <input id="login" type="submit" src="/login/index.html" value="Login">
+                    <br>
             </div>
             
         </form>
