@@ -2,51 +2,124 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+ }
 
-
-nav{
+ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #7454d9;
     color: white;
-    padding: 0 1.5rem;
+    height: 10rem;
+    padding-left: 70px;
+    padding-right: 300px; 
+}  
+
+
+ body{
+    
+    color: white;
+    background-color: #7454d9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;}
+a{
+    text-decoration: none;
+    color: white;
+}
+#top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+#nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 15px;
 }
 
-body{
-    background-color: #7454d9;
-}
-.buttonYellow {
+#navegacao, #nav_vinhos {
     display: flex;
-    background: #f1d958;
-    user-select: none;
-    cursor: pointer;
-    padding: 10px 40px;
-    height: 40px;
-    font-size: 16px;
-    font-weight: bold;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav_vinhos {
+    margin-top: 15px;
+}
+
+#navegacao li, #nav_vinhos li {
+    text-align: center; 
+    flex: 1;
+    white-space: nowrap; 
+
+}
+
+#nav li a, #nav_vinhos li a {
+    display: block; 
+    padding: 5px 35px;
+    background-color: #f1d958;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    border: none;
-    border-radius: 2px;
+    box-sizing: border-box; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: #d60c0c;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+#search-user {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px; 
+    margin-bottom: 80px;
+    margin-right: 40px;
+}
+
+#search-user img {
+    height: 40px; 
+}
+.interagir {
+    cursor: pointer;
+}
+.star {
+    margin-right: 12px;
+}
+
+#pesquisar {
+    padding: 8px;
+    border: 3px solid white;
+    border-radius: 20px;
+    font-size: 8px;
+    background-color: transparent;
+    margin-bottom: 6px;
+    color: white;
+    text-align: center;
+    
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font: 13px verdana, arial, sans-serif;
+ }
+
+ #cadastrar{
     cursor: pointer;
     color: white;
+    background-color: #94d1e4;
+    width: 100px;
+    margin-left: 150px;
 }
-.buttonBlue{
-    display: flex;
-    background: #94d1e4;
-    user-select: none;
-    cursor: pointer;
-    padding: 10px 40px;
-    height: 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    color: white;
-}
+
+.visible {
+    display: block;
+  }
+
 ul {
     list-style: none;
 }
@@ -59,18 +132,25 @@ a{
 }
 #cadastro{
     color: rgb(33, 32, 32);
-    width: 500px;
+    
     margin-left: 50px;
+    margin-bottom: 700px;
     font-family: monospace;
 }
-#buttons{
-    display: flex;
-    flex-direction: column;
-}
-#buttons a {
+
+#cadastrar{
+    cursor: pointer;
     background-color: #7454d9;
-    margin-right: 100px;
-    border-radius: 50px
+    width: 300px;
+    margin-left: 50px;
+}
+
+#login{
+    cursor: pointer;
+    color: white;
+    background-color: #94d1e4;
+    width: 100px;
+    margin-left: 150px;
 }
 input {
     width: 25rem;
@@ -103,19 +183,7 @@ h1{
     color: white
 }
 
-.rodape{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #7454d9;
-    color: white;
-    height: 100px;
-    padding: 10px 15px;
-}
-#cadastrar{
-    cursor: pointer;
-    background-color: red;
-}  
+ 
   .error-text {
     display: none;
     font-size: .8rem;
@@ -124,6 +192,20 @@ h1{
     margin-left: 80px;
   }
   
-  .visible {
-    display: block;
-  }
+  .rodape{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-decoration: none;
+    background-color: #7454d9;
+    color: white;
+    height: 30px;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+.linksRodape{
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    color: white;
+}

@@ -2,22 +2,38 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+ }
 
-
-nav{
+ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #7454d9;
     color: white;
-    padding: 0 1.5rem;
+    height: 10rem;
+    padding-left: 70px;
+    padding-right: 300px; 
+}  
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 15px;
 }
 
 body{
+    
+    color: white;
     background-color: #7454d9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;}
+a{
+    text-decoration: none;
+    color: white;
 }
-
 #top-bar {
     display: flex;
     align-items: center;
@@ -29,8 +45,7 @@ body{
     flex-direction: column;
     gap: 25px;
     margin-bottom: 15px;
-
-} 
+}
 .buttonYellow {
     display: flex;
     background: #f1d958;
@@ -62,6 +77,18 @@ body{
     color: black;
 }
 
+#nav li a {
+    display: block; 
+    padding: 5px 35px;
+    background-color: #f1d958;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    box-sizing: border-box; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: #d60c0c;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
 #search-user {
     display: flex;
     align-items: flex-end;
@@ -88,8 +115,7 @@ body{
     background-color: transparent;
     margin-bottom: 6px;
     color: white;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 ::-webkit-input-placeholder {
@@ -155,7 +181,7 @@ h2{
 }
 div{
     font-size: 18px;
-    color:white;
+    color:black;
     width: 500px;
     margin-left: 50px;
     font-family: monospace;
@@ -168,9 +194,17 @@ section{
 
 #login{
     cursor: pointer;
-    background-color: #94d1e4;
+    background-color: #7454d9;
     width: 300px;
     margin-left: 50px;
+}
+
+#cadastrar{
+    cursor: pointer;
+    color: white;
+    background-color: #94d1e4;
+    width: 100px;
+    margin-left: 150px;
 }
 
 input.error {
@@ -196,23 +230,21 @@ input.error {
     display: block;
   }
 
-footer{
-    margin-top: 35px;
-}
-#sobreNos{
-    display: block;
-    text-align: center;
-}
-#contatos{
-    display: block;
-    text-align: center;
-}
+
 .rodape{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
+    text-decoration: none;
     background-color: #7454d9;
     color: white;
     height: 30px;
     padding: 0 15px;
+    margin-top: 10px;
+}
+.linksRodape{
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    color: white;
 }
