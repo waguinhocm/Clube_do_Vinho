@@ -88,7 +88,7 @@ sectionNavRodape.classList.add("navRodape");
 arrayNavRodape = [
     {
         nome: "Politicas de Privacidade",
-        link: "../politicasPrivacidade/index.html"
+        link: "../politicaPrivacidade/index.html"
     },
 
     {
@@ -97,7 +97,7 @@ arrayNavRodape = [
     },
     {
         nome: "Sobre nós",
-        link: "../sobreNos/index.html"
+        link: "../sobre_nos/index.html"
     },
 ];
 
