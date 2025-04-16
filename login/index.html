@@ -6,36 +6,31 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./login.css">
+        <link rel="stylesheet" href="../login/login.css">
         <title> Login - Clube Do Vinho</title>
 
     </head>
     <body>
    
         <nav>
+            <div>
+                <a href="../index.html"><img src="../imagens/Logo_pag.png" alt="Logotipo" height="130" width="150"></a>
+            </div>
+            <section class="btnNav">
+                <a href="../index.html" class="buttonBlue">HOME</a>
+                <a href="../meuClube/index.html" class= "buttonYellow">MEU CLUBE</a>
+                <a href="../login/index.html" class="buttonBlue">LOGIN</a>
+                <a href="../parcerias/index.html" class= "buttonYellow">PARCERIAS</a>
+            </section>
             <div id="top-bar">
-                <div id="logo-nav">
-                    <img src="/imagens/Logo_pag.png" alt="Logo">
-                </div>
+                <img id="asterisco" src="../imagens/asteriscoAmarelo.png"alt="Asterisco"height="40" width="40">
 
-                <div id="nav">
-                    <ul id="navegacao">
-                        <li><a href="/index.html" style="background-color: #94d1e4;">HOME</a></li>
-                        <li><a href="/meuClube/index.html" >MEU CLUBE</a></li>
-                        <li><a href="/parcerias/index.html" style="background-color: #94d1e4;">PARCERIAS</a></li>
-                    </ul>
-                </div>
-                
-                
-                <div id="search-user">
-                    <img src="/imagens/asteriscoAmarelo.png" alt="asteriscoAmarelo" class="star">
-                    <label for="pesquisar" >
-                        <img src="/imagens/Lupa_pesquisar.png" alt="Lupa" class="interagir">
-                    </label>
-                    <input type="text" placeholder="Pesquisar" id="pesquisar">
-                    <img src="/imagens/usuario_sem_login.png" alt="usuarioLogin" class="interagir">
-                    <img src="/imagens/menu.png" alt="menu" class="interagir">
-                </div>
+                <a href="https://www.bing.com/?cc=br" target="_blank"><img src="../imagens/Lupa_pesquisar.png" alt="pesquisa" height="40" width="40"></a>
+
+                <a href="../login/index.html"><img src="../imagens/usuario_sem_login.png" alt="Usuario sem Login"height="40" width="40"></a>
+
+                <img id="menuOpcoesHeader" src="../imagens/menu.png" alt="Menu de Opções" height="40" width="40">
+            </div>
 
             </nav>
 
@@ -59,7 +54,7 @@
             <br>
             <input id="login" type="submit" value= "Login">
             <br>
-            <input  id= "cadastrar" type="submit" src="/cadastro/index.html" value= "Cadastrar"> 
+            <input  id= "cadastrar" type="submit" src="../cadastro/index.html" value= "Cadastrar">
             <br>
             
         </div>
