@@ -69,30 +69,37 @@ Diagrama Entidade Relacionamento
   (1, 2, 4.4, 'Um tinto cheio de personalidade: frutas escuras, toque de madeira e um final gostoso. Fácil de beber, combina demais com aquele churrasco ou jantar caprichado. Ótima pedida!', '2025-01-10');
 
 SELECT * FROM parceiro;
-SELECT * from vinho;
-SELECT * from usuario;
-select * from avaliacao;
 ```
 
 ![44a81810-77fe-4135-b3a3-ef39bdb54f83](https://github.com/user-attachments/assets/83a690fb-1e10-4f35-8330-dd316cf707c8)
-
+```
+SELECT * from vinho;
+```
 
 ![e4638897-e1d8-45c2-bbba-e41bd3b938cb](https://github.com/user-attachments/assets/57eb876a-4b2b-4b22-babb-a01a0bb4a5dd)
-
+```
+SELECT * from usuario;
+```
 
 ![0ae1c916-485c-4880-941b-8ef4df8164ad](https://github.com/user-attachments/assets/26143f60-0980-4f0d-af1e-dce862bac199)
-
+```
+SELECT * from avaliacao;
+```
 
 ![3eb88d29-bb40-44d4-8b70-70e078e8259b](https://github.com/user-attachments/assets/3ef30a42-b9ba-4e5e-b506-1acc257f9265)
-
-
-
+```
+SELECT nome, comentario from vinho JOIN avaliacao ON vinho.id = avaliacao.id_vinho;
+```
 
 ![fdf50a63-ec45-4d17-aa77-e7ae383cc42b](https://github.com/user-attachments/assets/819a34df-150a-407c-abb6-880d104fa363)
-
+```
+SELECT vinho.nome, parceiro.nome from vinho join parceiro on vinho.sugerir_parceiro = parceiro.nome;
+```
 
 ![ad50f8ec-952e-45ae-8e02-c28da1224e1d](https://github.com/user-attachments/assets/7237cd54-a4d9-451d-9b0c-8850b2e6f6d8)
-
+```
+SELECT usuario.nome, avaliacao.nota, vinho.nome FROM usuario JOIN avaliacao on usuario.id = avaliacao.id_usuario join vinho on avaliacao.id_vinho = vinho.id;
+```
 
 ![3fba9609-2fc8-4771-b771-3094a4b64cdb](https://github.com/user-attachments/assets/8d5fd997-6793-49b4-83d9-b74dff8bf5ea)
 
