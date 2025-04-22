@@ -68,11 +68,10 @@ Diagrama Entidade Relacionamento
   (2, 4, 4.5, 'Leve, fresco e com um toque cítrico que combina perfeitamente com dias quentes. Ideal para acompanhar pratos leves ou simplesmente para apreciar sozinho.', '2025-03-01'),
   (1, 2, 4.4, 'Um tinto cheio de personalidade: frutas escuras, toque de madeira e um final gostoso. Fácil de beber, combina demais com aquele churrasco ou jantar caprichado. Ótima pedida!', '2025-01-10');
 
-![image](https://github.com/user-attachments/assets/9995baeb-6e8b-4a9e-bf09-e9dcac3cb38c)
-
-
-
-
+SELECT * FROM parceiro;
+SELECT * from vinho;
+SELECT * from usuario;
+select * from avaliacao;
 ```
 
 
