@@ -79,3 +79,5 @@ select * from avaliacao;
 
 ![e4638897-e1d8-45c2-bbba-e41bd3b938cb](https://github.com/user-attachments/assets/57eb876a-4b2b-4b22-babb-a01a0bb4a5dd)
 
+
+
