@@ -67,5 +67,11 @@ Diagrama Entidade Relacionamento
   (1, 3, 4.7, 'O produto é ótimo para quem gosta de um vinho branco suave . É para tomar geladinho! Delícia!', '2025-04-17'),
   (2, 4, 4.5, 'Leve, fresco e com um toque cítrico que combina perfeitamente com dias quentes. Ideal para acompanhar pratos leves ou simplesmente para apreciar sozinho.', '2025-03-01'),
   (1, 2, 4.4, 'Um tinto cheio de personalidade: frutas escuras, toque de madeira e um final gostoso. Fácil de beber, combina demais com aquele churrasco ou jantar caprichado. Ótima pedida!', '2025-01-10');
-  
+
+![44a81810-77fe-4135-b3a3-ef39bdb54f83](https://github.com/user-attachments/assets/27c17a7a-6bf7-48dc-adf0-7cb88605a552)
+
+
+
 ```
+
+
