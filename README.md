@@ -74,4 +74,5 @@ SELECT * from usuario;
 select * from avaliacao;
 ```
 
+![44a81810-77fe-4135-b3a3-ef39bdb54f83](https://github.com/user-attachments/assets/83a690fb-1e10-4f35-8330-dd316cf707c8)
 
