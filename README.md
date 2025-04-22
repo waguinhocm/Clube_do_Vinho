@@ -80,4 +80,13 @@ select * from avaliacao;
 ![e4638897-e1d8-45c2-bbba-e41bd3b938cb](https://github.com/user-attachments/assets/57eb876a-4b2b-4b22-babb-a01a0bb4a5dd)
 
 
+![0ae1c916-485c-4880-941b-8ef4df8164ad](https://github.com/user-attachments/assets/26143f60-0980-4f0d-af1e-dce862bac199)
+
+
+![3eb88d29-bb40-44d4-8b70-70e078e8259b](https://github.com/user-attachments/assets/3ef30a42-b9ba-4e5e-b506-1acc257f9265)
+
+
+
+
+
 
