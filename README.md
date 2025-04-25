@@ -9,6 +9,7 @@ Diagrama Entidade Relacionamento
 
 
 ```
+   
   CREATE TABLE parceiro (
   nome VARCHAR(50) PRIMARY KEY,
   site VARCHAR(100),
@@ -54,7 +55,7 @@ Diagrama Entidade Relacionamento
   ('Concha Y Toro Reservado Cabernet Sauvignon', 'Tinto', 2019, 'Chile', 'Evino'),
   ('Casillero Del Diablo Merlot', 'Tinto', 2014, 'Chile', 'Wine'),
   ('Benjamin', 'Branco', 2018, 'Argentina', 'Divvino'),
-  ('Casal Garcia Branco', 'Branco', 2018, 'Portugal', 'Grand Cru');
+  ('Casal Garcia', 'Verde', 2018, 'Portugal', 'Grand Cru');
   
   INSERT INTO usuario (nome, sobrenome, email, data_cadastro) VALUES
   ('Amanda', 'Bazante', 'amanda@gmail.com', '2024-10-12'),
