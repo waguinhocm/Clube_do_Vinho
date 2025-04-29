@@ -19,6 +19,8 @@ menu.addEventListener('mouseover', ()=> {
     alert('Neste menu você poderá acessar as opções de vinhos mais recomendados do site');
 });
 
+
+
 //Dados salvos em um array
 
 arrayParceiros = [
