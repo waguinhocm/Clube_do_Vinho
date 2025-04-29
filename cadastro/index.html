@@ -1,100 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta chraset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale 1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../cadastro/cadastro.css">
-        <script src="cadastro.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua conta</title>
 
-        <title> Crie sua conta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./cadastro.css">
+    <script src="cadastro.js" defer></script>
+</head>
 
-    </head>
-
-    <body>
+<body>
+    <header>
         <nav>
             <div id="top-bar">
                 <div id="logo-nav">
-                    <img src="../imagens/Logo_pag.png" alt="Logo">
+                    <img src="/imagens/Logo_pag.png" alt="Logo">
                 </div>
-
 
                 <div id="nav">
                     <ul id="navegacao">
-                        <li><a href= "../index.html" style="background-color: #94d1e4;">HOME</a></li>
-                        <li><a href="../meuClube/index.html" >MEU CLUBE</a></li>
-                        <li><a href= "../login/index.html" style="background-color: #94d1e4;">LOGIN</a></li>
-                        <li><a href="../parcerias/index.html" >PARCERIAS</a></li>
+                        <li><a href="/index.html" style="background-color: #94d1e4;">HOME</a></li>
+                        <li><a href="/meuClube/">MEU CLUBE</a></li>
+                        <li><a href="/login/index.html" style="background-color: #94d1e4;">LOGIN</a></li>
+                        <li><a href="/parcerias/index.html">PARCERIAS</a></li>
+                    </ul>
+                    <ul id="nav_vinhos">
+                        <li><a href="/vinhos/index.html">VINHOS</a></li>
                     </ul>
                 </div>
-                
+
                 <div id="search-user">
-                    <img src="../imagens/asteriscoAmarelo.png" alt="asteriscoAmarelo" class="star">
-                    <label for="pesquisar" >
-                        <img src="../imagens/Lupa_pesquisar.png" alt="Lupa" class="interagir">
+                    <img src="/imagens/asteriscoAmarelo.png" alt="Asterisco Amarelo" class="star">
+                    
+                    <label for="pesquisar">
+                        <img src="/imagens/Lupa_pesquisar.png" alt="Lupa" class="interagir">
                     </label>
                     <input type="text" placeholder="Pesquisar" id="pesquisar">
-                    <img src="../imagens/usuario_sem_login.png"alt="usuarioLogin" class="interagir">
-                    <img src="../imagens/menu.png" alt="menu" class="interagir">
+
+                    <img src="/imagens/usuario_sem_login.png" alt="Usuário" class="interagir" id="dropdown-trigger-login">
+                    <img src="/imagens/menu.png" alt="Menu" class="interagir" id="dropdown-trigger-menu"> 
+
+                    <ul id="dropdown-login" class="dropdown">
+                        <li><a href="/login/index.html">LOGIN</a></li>
+                        <li><a href="/cadastro/index.html">CADASTRO</a></li>
+                    </ul>
+
+                    <ul id="dropdown-menu" class="dropdown">
+                        <li><a href="/index.html" style="background-color: #94d1e4;">HOME</a></li>
+                        <li><a href="/meuClube/">MEU CLUBE</a></li>
+                        <li><a href="/login/index.html" style="background-color: #94d1e4;">LOGIN</a></li>
+                        <li><a href="/parcerias/index.html">PARCERIAS</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        </header>
-        
-        <h1> Crie sua conta aqui. Entre para a maior comunidade dos amantes de vinho!</h1>
     </header>
-    <body>
+
+    <main>
+        <h1>Crie sua conta aqui. Entre para a maior comunidade dos amantes de vinho!</h1>
+
         <form>
-        
             <div id="cadastro">
-                <label for="nomeCompleto" id="nomeCompleto">Nome completo: </label><br>
-                <input type="text" id="signUp-usuario" name="signUp-usuario" placeholder="Seu nome completo" required>
-                <p class="error-text"></p> 
+                <label for="signUp-usuario">Nome completo:</label><br>
+                <input class="input" type="text" id="signUp-usuario" name="signUp-usuario" placeholder="Seu nome completo" required>
+                <p class="error-text"></p>
+
                 <br>
-                <label for="dataNascimento">Data de Nascimento: </label><br>
-                <input type="date" id="dataNascimento" required>
+
+                <label for="dataNascimento">Data de Nascimento:</label><br>
+                <input class="input" type="date" id="dataNascimento" name="dataNascimento" required>
+
+                <br>
+
+                <label for="signUp-email">Email:</label><br>
+                <input class="input" type="email" id="signUp-email" name="signUp-email" placeholder="email@email.com" required>
+                <p class="error-text"></p>
+
+               
+
+                <label for="signUp-senha">Senha:</label><br>
+                <input class="input" type="password" id="signUp-senha" name="signUp-senha" required>
+                <p class="error-text"></p>
+
                 
-                <br>
-                <label for="email">Email: </label><br>
-                <input type="email" id="signUp-email"  placeholder="email@email.com" required>
-                <p class="error-text"></p> 
 
-                <br>
-                <label for="password">Senha: </label><br>
-                <input type="password" id="signUp-senha" name="signUp-senha" required>
-                <p class="error-text"></p> 
+                <input class="input" id="cadastrar" type="submit" value="Cadastrar">
+                
 
-                <br>
-                    <br>
-                    <input  id= "cadastrar" type="submit" value= "Cadastrar"> 
-                    <br>
-                    <input id="login" type="submit" src="../login/index.html" value="Login">
-                    <br>
+                <button id="login" type="button" onclick="window.location.href='../login/index.html'">Login</button>
+                
             </div>
-            
         </form>
-        
-        <footer>
-            <nav class="rodape">
-                <div class="rodape">
-                    <a href="../index.html"><img src="../imagens/Logo_pag.png"  alt="Logotipo" height="42" width="52"></a>
-                    <h6>Copyright 2025 Clube do Vinho</h6>
-                </div>
-    
-                <section>
-                    <a href="../politicaPrivacidade/index.html">Política de Privacidade</a>
-                    <a href="../contato/index.html">Contatos</a>
-                    <a href="../sobre_nos/index.html">Sobre Nós</a>
-                </section>
-                <div>
-                    <a href="https://www.instagram.com/"target="_blank"><img src="../imagens/Instagran.png" alt="Instagran"height="30" width="30"></a>
-                    <a href="https://www.youtube.com/"target="_blank"><img src="../imagens/Youtube.png" alt="Youtube"height="30" width="30"></a>
-                    <a href="https://www.facebook.com/"target="_blank"><img src="../imagens/Facebook.png" alt="Facebook"height="30" width="30"></a>
-                </div>
-            </nav>
-        </footer>
-    
-    </body>
+    </main>
+
+    <footer>
+        <nav class="rodape">
+            <div class="rodape">
+                <a href="../index.html">
+                    <img src="../imagens/Logo_pag.png" alt="Logotipo" height="42" width="52">
+                </a>
+                <h6>Copyright 2025 Clube do Vinho</h6>
+            </div>
+
+            <section>
+                <a href="../politicaPrivacidade/index.html">Política de Privacidade</a>
+                <a href="../contato/index.html">Contatos</a>
+                <a href="../sobre_nos/index.html">Sobre Nós</a>
+            </section>
+
+            <div>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../imagens/Instagran.png" alt="Instagram" height="30" width="30">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="../imagens/Youtube.png" alt="YouTube" height="30" width="30">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../imagens/Facebook.png" alt="Facebook" height="30" width="30">
+                </a>
+            </div>
+        </nav>
+    </footer>
+</body>
 </html>

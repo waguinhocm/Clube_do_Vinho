@@ -200,19 +200,25 @@ a{
     font-size: 14px;
     cursor: pointer;
 }
-.rodape {
+.rodape{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
+    text-decoration: none;
+    background-color: #7454d9;
     color: white;
-  }
-  
-  .linksRodape {
+    height: 30px;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+.linksRodape{
     display: flex;
     gap: 40px;
     text-decoration: none;
     color: white;
-  }
+}
+
  
 .dropdown {
     display: none;
@@ -257,7 +263,7 @@ a{
     padding: 10px;
     z-index: 1000;
     min-width: 150px;
-    top: 230px;
+    top: 250px;
   }
   
   .dropdown-vinho li {

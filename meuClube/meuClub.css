@@ -3,7 +3,12 @@
     margin: 0;
     padding: 0;
  }
-
+ html { font-size: 100%; }        /* 16px por padrão */
+ h1 { font-size: 2.5rem; }       /* 40px */
+ p  { font-size: 1rem; }         /* 16px */
+ @media (max-width: 480px) {
+   html { font-size: 90%; }      /* reduz 10% para telas pequenas */
+ }
  nav{
     display: flex;
     justify-content: space-between;
@@ -13,16 +18,25 @@
     height: 10rem;
     padding-left: 70px;
     padding-right: 300px; 
-}
+}  
 
-body{
-    
+
+ body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
     background-color: #7454d9;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-optical-sizing: auto;
     font-weight: 200;
-    font-style: normal;}
-
+}
+main {
+    flex: 1;
+  }
+a{
+    text-decoration: none;
+    color: white;
+}
 #top-bar {
     display: flex;
     align-items: center;
@@ -34,13 +48,6 @@ body{
     flex-direction: column;
     gap: 25px;
     margin-bottom: 15px;
-}
-
-#navegacao li, #nav_vinhos li {
-    text-align: center; 
-    flex: 1;
-    white-space: nowrap; 
-
 }
 
 #navegacao, #nav_vinhos {
@@ -110,12 +117,6 @@ body{
     font: 13px verdana, arial, sans-serif;
  }
 
- section{
-    display: flex;
-    gap: 4rem;
-    text-decoration: none;
-
-}
 
 #nav a:hover, 
 #nav_vinhos a:hover {
@@ -139,6 +140,7 @@ body{
     text-align: center;
     position: relative;
     color: black;
+    
 }
 
 .wineContour img {
@@ -173,8 +175,13 @@ body{
     font-size: 14px;
     cursor: pointer;
 }
+.btn{
+    display: flex;
+    gap: 1.5rem;
+    text-decoration: none;
 
-.buttonYellow {
+}
+#buttonYellow {
     display: flex;
     background: #f1d958;
     user-select: none;
@@ -188,7 +195,7 @@ body{
     cursor: pointer;
     color: black;
 }
-.buttonBlue{
+#buttonBlue{
     display: flex;
     background: #94d1e4;
     user-select: none;
@@ -202,7 +209,6 @@ body{
     cursor: pointer;
     color: black;
 }
-
 .rodape{
     display: flex;
     justify-content:space-between;
@@ -221,3 +227,67 @@ body{
     text-decoration: none;
     color: white;
 }
+
+ 
+.dropdown {
+    display: none;
+    position: absolute; 
+    top: 75px; 
+    right: 25px; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .dropdown li {
+    margin: 5px 0;
+  }
+  
+  .dropdown li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px 10px;
+  }
+  
+  .dropdown li a:hover {
+    background-color: #f1d958;
+  }
+
+  #homeMenuHover {
+    background-color: #fff;
+  } 
+
+
+.dropdown-vinho {
+    display: none;  
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    z-index: 1000;
+    min-width: 150px;
+    top: 230px;
+  }
+  
+  .dropdown-vinho li {
+    margin: 5px 0;
+  }
+  
+  .dropdown-vinho li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px 10px;
+  }
+  
+  .dropdown-vinho li a:hover {
+    background-color: #f1d958;
+  }
+
+  

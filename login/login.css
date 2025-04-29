@@ -2,34 +2,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+ }
 
-nav{
+ nav{
     display: flex;
     justify-content: space-between;
-    gap: 40px;
     align-items: center;
     background-color: #7454d9;
     color: white;
     height: 10rem;
     padding-left: 70px;
     padding-right: 300px; 
-}
+}  
 
-#nav {
+
+ body{
     display: flex;
-    gap: 25px;
-    margin-bottom: 15px;
-}
-
-body{
-    
+    flex-direction: column;
+    min-height: 100vh;
     color: white;
     background-color: #7454d9;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-optical-sizing: auto;
     font-weight: 200;
-    font-style: normal;}
+}
+main {
+    flex: 1;
+  }
 a{
     text-decoration: none;
     color: white;
@@ -46,38 +44,28 @@ a{
     gap: 25px;
     margin-bottom: 15px;
 }
-.buttonYellow {
+
+#navegacao, #nav_vinhos {
     display: flex;
-    background: #f1d958;
-    user-select: none;
-    cursor: pointer;
-    padding: 10px 40px;
-    height: 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    color: black;
-}
-.buttonBlue{
-    display: flex;
-    background: #94d1e4;
-    user-select: none;
-    cursor: pointer;
-    padding: 10px 40px;
-    height: 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    color: black;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#nav li a {
+#nav_vinhos {
+    margin-top: 15px;
+}
+
+#navegacao li, #nav_vinhos li {
+    text-align: center; 
+    flex: 1;
+    white-space: nowrap; 
+
+}
+
+#nav li a, #nav_vinhos li a {
     display: block; 
     padding: 5px 35px;
     background-color: #f1d958;
@@ -115,20 +103,16 @@ a{
     background-color: transparent;
     margin-bottom: 6px;
     color: white;
-    text-align: center; 
+    text-align: center;
+    
 }
 
 ::-webkit-input-placeholder {
     color: white;
     font: 13px verdana, arial, sans-serif;
-}
+ }
 
-section{
-    display: flex;
-    gap: 4rem;
-    text-decoration: none;
 
-}
 ul {
     list-style: none;
 }
@@ -136,7 +120,7 @@ a{
     text-decoration: none;
     color: white;
     text-align: center; 
-    flex: 1;
+    
     white-space: nowrap;
 }
 
@@ -149,7 +133,7 @@ form{
     border-radius: 16px;
     padding-top: 25px;
 }
-input {
+.inputForm {
     width: 25rem;
     padding: 12px 10px;
     margin: 8px 0;
@@ -179,7 +163,7 @@ h2{
     margin-bottom: 18px;
     color: white
 }
-div{
+.formulario{
     font-size: 18px;
     color:black;
     width: 500px;
@@ -200,11 +184,14 @@ section{
 }
 
 #cadastrar{
-    cursor: pointer;
-    color: white;
+    width: 25rem;
+    padding: 10px 110px;
+    margin: 30px 50px;
+   color: black;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
     background-color: #94d1e4;
-    width: 100px;
-    margin-left: 150px;
 }
 
 input.error {
@@ -248,3 +235,34 @@ input.correct {
     text-decoration: none;
     color: white;
 }
+.dropdown {
+    display: none;
+    position: absolute; 
+    top: 75px; 
+    right: 25px; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .dropdown li {
+    margin: 5px 0;
+  }
+  
+  .dropdown li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px 10px;
+  }
+  
+  .dropdown li a:hover {
+    background-color: #f1d958;
+  }
+
+  #homeMenuHover {
+    background-color: #fff;
+  } 

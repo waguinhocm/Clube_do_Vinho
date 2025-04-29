@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vinhos.css">
+    <script src="vinhos.js" defer></script>
+    <title>vinhos</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <div id="top-bar">
+            <div id="logo-nav">
+                <img src="/imagens/Logo_pag.png" alt="Logo">
+            </div>
+            <div id="nav">
+                <ul id="navegacao">
+                    <li><a href="/index.html" style="background-color: #94d1e4;">HOME</a></li>
+                    <li><a href="/meuClube/">MEU CLUBE</a></li>
+                    <li><a href="/login/index.html" style="background-color: #94d1e4;">LOGIN</a></li>
+                    <li><a href="/parcerias/index.html">PARCERIAS</a></li>
+                </ul>
+                <ul id="nav_vinhos">
+                    <li><a href="" >VINHOS</a></li>
+                </ul>
+            </div>
+            
+            <div id="search-user">
+                <img src="/imagens/asteriscoAmarelo.png" alt="asteriscoAmarelo" class="star">
+                <label for="pesquisar">
+                  <img src="/imagens/Lupa_pesquisar.png" alt="Lupa" class="interagir">
+                </label>
+                <input type="text" placeholder="Pesquisar" id="pesquisar">
+
+                <img src="/imagens/usuario_sem_login.png" alt="usuarioLogin" class="interagir" id="dropdown-trigger-login">
+                <img src="/imagens/menu.png" alt="menu" class="interagir" id="dropdown-trigger-menu"> 
+                
+
+                <ul id="dropdown-login" class="dropdown">
+                  <li><a href="/login/index.html">LOGIN</a></li>
+                  <li><a href="/cadastro/index.html">CADASTRO</a></li>
+                </ul>
+                
+                <ul id="dropdown-menu" class="dropdown">
+                    <li><a href="/index.html" style="background-color: #94d1e4;" id="homeMenuHover">HOME</a></li>
+                    <li><a href="/meuClube/">MEU CLUBE</a></li>
+                    <li><a href="/login/index.html" style="background-color: #94d1e4;" id="homeMenuHover">LOGIN</a></li>
+                    <li><a href="/parcerias/index.html">PARCERIAS</a></li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+    </header>
+    
+    <main>
+  
+        <div class="more-posts">
+            <strong>VINHOS TINTOS</strong>
+            
+            <br><br><br>
+        </div>
+        
+        <section class="wines">
+            <article class="wineContour">
+                <span class="rating">4.8</span>
+                <div>  
+                    <img src="https://m.media-amazon.com/images/I/41idwlXC+6L._AC_SX342_SY445_.jpg" alt="Cabernet Sauvignon">
+                    <p>Cabernet Sauvignon Concha y Toro</p>
+                </div>
+                <div class="wineButtons">
+                    <button class="btn favorite" data-id="tinto1">❤️</button>
+                    <button class="btn-add" data-id="tinto1">➕</button>
+                    <button class="btn-review" data-id="tinto1">...</button>
+                    <ul class="dropdown-vinho">
+                        <li><a href="#">JÁ BEBI</a></li>
+                        <li><a href="#">QUERO BEBER</a></li>
+                        <li><a href="#">FAVORITAR</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                    </ul>
+                </div>
+            </article>
+    
+            <article class="wineContour">
+                <span class="rating">4.7</span>
+                <div>  
+                    <img src="https://m.media-amazon.com/images/I/413sQxpqIXL._AC_SX385_.jpg" alt="Malbec">
+                    <p>Malbec Alamos Mendoza</p>
+                </div>
+                <div class="wineButtons">
+                    <button class="btn favorite" data-id="tinto2">❤️</button>
+                    <button class="btn-add" data-id="tinto2">➕</button>
+                    <button class="btn-review" data-id="tinto2">...</button>
+                    <ul class="dropdown-vinho">
+                        <li><a href="#">JÁ BEBI</a></li>
+                        <li><a href="#">QUERO BEBER</a></li>
+                        <li><a href="#">FAVORITAR</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                    </ul>
+                </div>
+            </article>
+    
+            <article class="wineContour">
+                <span class="rating">4.6</span>
+                <div>  
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_798514-MLU74244416249_012024-O.webp" alt="Merlot">
+                    <p>Merlot Perini 2019</p>
+                    <br>
+                </div>
+                <div class="wineButtons">
+                    <button class="btn favorite" data-id="tinto3">❤️</button>
+                    <button class="btn-add" data-id="tinto3">➕</button>
+                    <button class="btn-review" data-id="tinto3">...</button>
+                    <ul class="dropdown-vinho">
+                        <li><a href="#">JÁ BEBI</a></li>
+                        <li><a href="#">QUERO BEBER</a></li>
+                        <li><a href="#">FAVORITAR</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                    </ul>
+                </div>
+            </article>
+    
+            <article class="wineContour">
+                <span class="rating">4.5</span>
+                <div>  
+                    <img src="https://m.media-amazon.com/images/I/41Tq7IbLK7L.__AC_SX342_SY445_QL70_ML2_.jpg" alt="Carménère">
+                    <p>Carménère Terra Andina</p>
+                </div>
+                <div class="wineButtons">
+                    <button class="btn favorite" data-id="tinto4">❤️</button>
+                    <button class="btn-add" data-id="tinto4">➕</button>
+                    <button class="btn-review" data-id="tinto4">...</button>
+                    <ul class="dropdown-vinho">
+                        <li><a href="#">JÁ BEBI</a></li>
+                        <li><a href="#">QUERO BEBER</a></li>
+                        <li><a href="#">FAVORITAR</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    
+ 
+        <div class="more-posts">
+            <strong>VINHOS BRANCOS</strong>
+            
+            <br><br><br>
+        </div>
+        
+        <section class="wines">
+            <article class="wineContour">
+                <span class="rating">4.9</span>
+                <div>  
+                    <img src="https://m.media-amazon.com/images/I/61y4huHVY8L.__AC_SX342_SY445_QL70_ML2_.jpg">
+                    <p>Chardonnay Santa Helena</p>
+                </div>
+                <div class="wineButtons">
+                    <button class="btn favorite" data-id="branco1">❤️</button>
+                    <button class="btn-add" data-id="branco1">➕</button>
+                    <button class="btn-review" data-id="branco1">...</button>
+                    <ul class="dropdown-vinho">
+                        <li><a href="#">JÁ BEBI</a></li>
+                        <li><a href="#">QUERO BEBER</a></li>
+                        <li><a href="#">FAVORITAR</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                    </ul>
+                </div>
+            </article>
+    
+            
+        </section>
+    
+    
+        <div class="more-posts">
+            <strong>VINHOS ROSÉ</strong>
+            
+            <br><br><br>
+        </div>
+        
+        <section class="wines">
+            <article class="wineContour">
+                <span class="rating">4.8</span>
+                <div>  
+                    <img src="https://m.media-amazon.com/images/I/51ogCgl4nnL.__AC_SY445_SX342_QL70_ML2_.jpg" alt="Rosé Miolo">
+                    <p>Rosé Miolo Lote 43</p>
+                </div>
+                <div class="wineButtons">
+                    <button class="btn favorite" data-id="rose1">❤️</button>
+                    <button class="btn-add" data-id="rose1">➕</button>
+                    <button class="btn-review" data-id="rose1">...</button>
+                    <ul class="dropdown-vinho">
+                        <li><a href="#">JÁ BEBI</a></li>
+                        <li><a href="#">QUERO BEBER</a></li>
+                        <li><a href="#">FAVORITAR</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                    </ul>
+                </div>
+            </article>
+    
+          
+            
+        </section>
+    
+      
+        <div class="more-posts">
+            <strong>ESPUMANTES</strong>
+            <br><br><br>
+        </div>
+        
+        <section class="wines">
+            <article class="wineContour">
+                <span class="rating">4.9</span>
+                <div>  
+                    <img src="https://m.media-amazon.com/images/I/51RTwJ6lg4L.__AC_SX342_SY445_QL70_ML2_.jpg" alt="Champagne">
+                    <p>Champagne Moët & Chandon</p>
+                </div>
+                <div class="wineButtons">
+                    <button class="btn favorite" data-id="espumante1">❤️</button>
+                    <button class="btn-add" data-id="espumante1">➕</button>
+                    <button class="btn-review" data-id="espumante1">...</button>
+                    <ul class="dropdown-vinho">
+                        <li><a href="#">JÁ BEBI</a></li>
+                        <li><a href="#">QUERO BEBER</a></li>
+                        <li><a href="#">FAVORITAR</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                    </ul>
+                </div>
+            </article>
+    
+            
+        </section>
+    
+
+        <div class="more-posts">
+            <strong>VINHOS SECOS</strong>
+            
+            <br><br><br>
+        </div>
+        
+        <section class="wines">
+            <article class="wineContour">
+                <span class="rating">4.7</span>
+                <div>  
+                    <img src="https://m.media-amazon.com/images/I/41idwlXC+6L._AC_SX342_SY445_.jpg" alt="Seco Cabernet">
+                    <p>Cabernet Sauvignon Seco</p>
+                </div>
+                <div class="wineButtons">
+                    <button class="btn favorite" data-id="seco1">❤️</button>
+                    <button class="btn-add" data-id="seco1">➕</button>
+                    <button class="btn-review" data-id="seco1">...</button>
+                    <ul class="dropdown-vinho">
+                        <li><a href="#">JÁ BEBI</a></li>
+                        <li><a href="#">QUERO BEBER</a></li>
+                        <li><a href="#">FAVORITAR</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                    </ul>
+                </div>
+            </article>
+    
+         
+            
+        </section>
+    </main>
+    <footer>
+        <nav class="rodape">
+            <div class="rodape">
+                <a href="/index.html"><img src="/imagens/Logo_pag.png" alt="Logotipo"height="42" width="52"></a>
+                <h6>Copyright 2025 Clube do Vinho</h6>
+            </div>
+
+            <section class="linksRodape">
+                <a href="/politicaPrivacidade/index.html">Política de Privacidade</a>
+                <a href="/contato/index.html">Contatos</a>
+                <a href="/sobre_nos/index.html">Sobre Nós</a>
+            </section>
+            <div>
+                <a href="https://www.instagram.com/"target="_blank"><img src="/imagens/Instagran.png" alt="Instagran"height="30" width="30"></a>
+                <a href="https://www.youtube.com/"target="_blank"><img src="/imagens/Youtube.png" alt="Youtube"height="30" width="30"></a>
+                <a href="https://www.facebook.com/"target="_blank"><img src="/imagens/Facebook.png" alt="Facebook"height="30" width="30"></a>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
+

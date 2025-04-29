@@ -7,54 +7,76 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../login/login.css">
+        <script src="./login.js" defer></script>
         <title> Login - Clube Do Vinho</title>
 
     </head>
     <body>
    
-        <nav>
-            <div>
-                <a href="../index.html"><img src="../imagens/Logo_pag.png" alt="Logotipo" height="130" width="150"></a>
-            </div>
-            <section class="btnNav">
-                <a href="../index.html" class="buttonBlue">HOME</a>
-                <a href="../meuClube/index.html" class= "buttonYellow">MEU CLUBE</a>
-                <a href="../login/index.html" class="buttonBlue">LOGIN</a>
-                <a href="../parcerias/index.html" class= "buttonYellow">PARCERIAS</a>
-            </section>
-            <div id="top-bar">
-                <img id="asterisco" src="../imagens/asteriscoAmarelo.png"alt="Asterisco"height="40" width="40">
-
-                <a href="https://www.bing.com/?cc=br" target="_blank"><img src="../imagens/Lupa_pesquisar.png" alt="pesquisa" height="40" width="40"></a>
-
-                <a href="../login/index.html"><img src="../imagens/usuario_sem_login.png" alt="Usuario sem Login"height="40" width="40"></a>
-
-                <img id="menuOpcoesHeader" src="../imagens/menu.png" alt="Menu de Opções" height="40" width="40">
-            </div>
-
+        <body>
+            <header>
+            <nav>
+                <div id="top-bar">
+                    <div id="logo-nav">
+                        <img src="/imagens/Logo_pag.png" alt="Logo">
+                    </div>
+                    <div id="nav">
+                        <ul id="navegacao">
+                            <li><a href="/index.html" style="background-color: #94d1e4;">HOME</a></li>
+                            <li><a href="/meuClube/">MEU CLUBE</a></li>
+                            <li><a href="/login/index.html" style="background-color: #94d1e4;">LOGIN</a></li>
+                            <li><a href="/parcerias/index.html">PARCERIAS</a></li>
+                        </ul>
+                        <ul id="nav_vinhos">
+                            <li><a href="/vinhos/index.html" >VINHOS</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="search-user">
+                        <img src="/imagens/asteriscoAmarelo.png" alt="asteriscoAmarelo" class="star">
+                        <label for="pesquisar">
+                          <img src="/imagens/Lupa_pesquisar.png" alt="Lupa" class="interagir">
+                        </label>
+                        <input type="text" placeholder="Pesquisar" id="pesquisar">
+        
+                        <img src="/imagens/usuario_sem_login.png" alt="usuarioLogin" class="interagir" id="dropdown-trigger-login">
+                        <img src="/imagens/menu.png" alt="menu" class="interagir" id="dropdown-trigger-menu"> 
+                        
+        
+                        <ul id="dropdown-login" class="dropdown">
+                          <li><a href="/login/index.html">LOGIN</a></li>
+                          <li><a href="/cadastro/index.html">CADASTRO</a></li>
+                        </ul>
+                        
+                        <ul id="dropdown-menu" class="dropdown">
+                            <li><a href="/index.html" style="background-color: #94d1e4;" id="homeMenuHover">HOME</a></li>
+                            <li><a href="/meuClube/">MEU CLUBE</a></li>
+                            <li><a href="/login/index.html" style="background-color: #94d1e4;" id="homeMenuHover">LOGIN</a></li>
+                            <li><a href="/parcerias/index.html">PARCERIAS</a></li>
+                        </ul>
+                      </div>
+                </div>
             </nav>
-
-
-        </header>
+            </header>
 
         <h1>Bem-vindo a maior comunidade dos apaixonados por vinho!</h1>
 
         <form>
         <h2>Login</h2> 
-        <div>
+        <div class="formulario">
             <label for="email">Email: </label>
             <br>
-            <input type="email" id="email"  placeholder="email@email.com">
+            <input class="inputForm" type="email" id="email"  placeholder="email@email.com">
             <br>
             <label for="password">Senha: </label>
             <br>
-            <input type="password" id="signUp-senha" name="signUp-senha" class="correct" required>
+            <input class="inputForm" type="password" id="signUp-senha" name="signUp-senha" class="correct" required>
             <br>
             <p class="error-text">*Senha inválida</p>
             <br>
-            <input id="login" type="submit" value= "Login">
-            <br>
-            <input  id= "cadastrar" type="submit" src="../cadastro/index.html" value= "Cadastrar">
+            <input class="inputForm" id="login" type="submit" value= "Login">
+            <br><br>
+            <a class="inputForm" id= "cadastrar" href="/cadastro/index.html">Cadastrar</a>
             <br>
             
         </div>
