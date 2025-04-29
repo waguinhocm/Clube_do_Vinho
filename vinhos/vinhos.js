@@ -79,7 +79,7 @@ function favorito() {
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
   document.querySelectorAll(".btn-favorite, .btn.favorite").forEach(button => {
-    const wineId = button.dataset.id;  // data-id → dataset.id
+    const wineId = button.dataset.id; 
     button.textContent = favorites.includes(wineId) ? "💖" : "❤️";
 
     button.addEventListener("click", () => {
