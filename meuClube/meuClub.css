@@ -3,12 +3,6 @@
     margin: 0;
     padding: 0;
  }
- html { font-size: 100%; }        /* 16px por padrão */
- h1 { font-size: 2.5rem; }       /* 40px */
- p  { font-size: 1rem; }         /* 16px */
- @media (max-width: 480px) {
-   html { font-size: 90%; }      /* reduz 10% para telas pequenas */
- }
  nav{
     display: flex;
     justify-content: space-between;
